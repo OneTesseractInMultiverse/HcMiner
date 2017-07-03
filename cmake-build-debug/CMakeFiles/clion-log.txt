@@ -1,0 +1,15 @@
+"/Users/subvertic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/171.4694.4/CLion.app/Contents/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/subvertic/CLionProjects/hc-miner
+-- Configuring done
+CMake Error at CMakeLists.txt:7 (add_executable):
+  Cannot find source file:
+
+    rest_client.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error: CMake can not determine linker language for target: hc_miner
+CMake Error: Cannot determine link language for target "hc_miner".
+-- Generating done
+-- Build files have been written to: /Users/subvertic/CLionProjects/hc-miner/cmake-build-debug
