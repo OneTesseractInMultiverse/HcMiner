@@ -123,6 +123,60 @@ hc_miner/fast:
 	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/build
 .PHONY : hc_miner/fast
 
+RestClient.o: RestClient.cpp.o
+
+.PHONY : RestClient.o
+
+# target to build an object file
+RestClient.cpp.o:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/RestClient.cpp.o
+.PHONY : RestClient.cpp.o
+
+RestClient.i: RestClient.cpp.i
+
+.PHONY : RestClient.i
+
+# target to preprocess a source file
+RestClient.cpp.i:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/RestClient.cpp.i
+.PHONY : RestClient.cpp.i
+
+RestClient.s: RestClient.cpp.s
+
+.PHONY : RestClient.s
+
+# target to generate assembly for a file
+RestClient.cpp.s:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/RestClient.cpp.s
+.PHONY : RestClient.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... hc_miner"
+	@echo "... RestClient.o"
+	@echo "... RestClient.i"
+	@echo "... RestClient.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

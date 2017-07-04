@@ -8,6 +8,16 @@
 // IMPORTS -------------------------------------------------------------
 #include <string>
 #include <curl/curl.h>
+#include <iostream>
+using namespace std;
+// ----------------------------------------------------------------------
+// DEFINITIONS
+// ----------------------------------------------------------------------
+
+#define ERROR_GETTING_TOKEN -11
+#define ERROR_POSTING_DATA -1
+#define ERROR_INVALID_TOKEN -2
+#define SUCCESS 0
 
 // ----------------------------------------------------------------------
 // API DATA STRUCT
@@ -36,18 +46,28 @@ class RestClient {
 
 
 public:
+    // CONSTRUCTOR / DESTRUCTOR -----------------------------------------
     RestClient(std::string, std::string);
     ~RestClient();
-    void send();
 
+    // CLASS PUBLIC METHODS ---------------------------------------------
+
+    /**
+     * Performs an HTTP POST to a given endpoint using the given payload
+     * and provided content type.
+     * @return
+     */
+    int post(std::string, std::string, std::string);
 private:
+
     // PRIVATE PROPERTIES -----------------------------------------------
     std::string _userId;
     std::string _userKey;
     std::string _jwtToken;
 
-    void createPerfData();
-
+    // PRIVATE METHODS --------------------------------------------------
+    std::string buildAuthenticationPayload();
+    int fetchJwtToken();
 
 };
 

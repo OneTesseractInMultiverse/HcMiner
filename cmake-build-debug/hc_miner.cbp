@@ -80,6 +80,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/subvertic/CLionProjects/hc-miner/RestClient.cpp">
+			<Option target="hc_miner"/>
+		</Unit>
+		<Unit filename="/Users/subvertic/CLionProjects/hc-miner/RestClient.h">
+			<Option target="hc_miner"/>
+		</Unit>
+		<Unit filename="/Users/subvertic/CLionProjects/hc-miner/main.cpp">
+			<Option target="hc_miner"/>
+		</Unit>
 		<Unit filename="/Users/subvertic/CLionProjects/hc-miner/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

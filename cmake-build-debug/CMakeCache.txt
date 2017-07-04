@@ -186,8 +186,20 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a file.
+CURL_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include
+
+//Path to a library.
+CURL_LIBRARY:FILEPATH=/usr/lib/libcurl.dylib
+
+//The directory containing a CMake configuration file for LICURL.
+LICURL_DIR:PATH=LICURL_DIR-NOTFOUND
+
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=SDL2_DIR-NOTFOUND
 
 //Value Computed by CMake
 hc_miner_BINARY_DIR:STATIC=/Users/subvertic/CLionProjects/hc-miner/cmake-build-debug
@@ -333,6 +345,12 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_INCLUDE_DIR
+CURL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_LIBRARY
+CURL_LIBRARY-ADVANCED:INTERNAL=1
+//Details about finding CURL
+FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/libcurl.dylib][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include][v7.51.0()]
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
 
