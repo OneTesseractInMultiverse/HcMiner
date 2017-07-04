@@ -1,3 +1,3 @@
-/Users/subvertic/CLionProjects/hc-miner/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/subvertic/CLionProjects/hc-miner/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/subvertic/CLionProjects/hc-miner/cmake-build-debug/CMakeFiles/hc_miner.dir
+/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/hc_miner.dir

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/subvertic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/171.4694.4/CLion.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = /home/pedro/Software/clion-2017.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = "/Users/subvertic/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/171.4694.4/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = /home/pedro/Software/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/subvertic/CLionProjects/hc-miner
+CMAKE_SOURCE_DIR = /home/pedro/CLionProjects/HcMiner
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/subvertic/CLionProjects/hc-miner/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pedro/CLionProjects/HcMiner/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hc_miner.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/hc_miner.dir/flags.make
 
 CMakeFiles/hc_miner.dir/main.cpp.o: CMakeFiles/hc_miner.dir/flags.make
 CMakeFiles/hc_miner.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/subvertic/CLionProjects/hc-miner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hc_miner.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hc_miner.dir/main.cpp.o -c /Users/subvertic/CLionProjects/hc-miner/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hc_miner.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hc_miner.dir/main.cpp.o -c /home/pedro/CLionProjects/HcMiner/main.cpp
 
 CMakeFiles/hc_miner.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hc_miner.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/subvertic/CLionProjects/hc-miner/main.cpp > CMakeFiles/hc_miner.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedro/CLionProjects/HcMiner/main.cpp > CMakeFiles/hc_miner.dir/main.cpp.i
 
 CMakeFiles/hc_miner.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hc_miner.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/subvertic/CLionProjects/hc-miner/main.cpp -o CMakeFiles/hc_miner.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedro/CLionProjects/HcMiner/main.cpp -o CMakeFiles/hc_miner.dir/main.cpp.s
 
 CMakeFiles/hc_miner.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/hc_miner.dir/main.cpp.o.provides.build: CMakeFiles/hc_miner.dir/main.
 
 CMakeFiles/hc_miner.dir/RestClient.cpp.o: CMakeFiles/hc_miner.dir/flags.make
 CMakeFiles/hc_miner.dir/RestClient.cpp.o: ../RestClient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/subvertic/CLionProjects/hc-miner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hc_miner.dir/RestClient.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hc_miner.dir/RestClient.cpp.o -c /Users/subvertic/CLionProjects/hc-miner/RestClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hc_miner.dir/RestClient.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hc_miner.dir/RestClient.cpp.o -c /home/pedro/CLionProjects/HcMiner/RestClient.cpp
 
 CMakeFiles/hc_miner.dir/RestClient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hc_miner.dir/RestClient.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/subvertic/CLionProjects/hc-miner/RestClient.cpp > CMakeFiles/hc_miner.dir/RestClient.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedro/CLionProjects/HcMiner/RestClient.cpp > CMakeFiles/hc_miner.dir/RestClient.cpp.i
 
 CMakeFiles/hc_miner.dir/RestClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hc_miner.dir/RestClient.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/subvertic/CLionProjects/hc-miner/RestClient.cpp -o CMakeFiles/hc_miner.dir/RestClient.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedro/CLionProjects/HcMiner/RestClient.cpp -o CMakeFiles/hc_miner.dir/RestClient.cpp.s
 
 CMakeFiles/hc_miner.dir/RestClient.cpp.o.requires:
 
@@ -117,7 +117,7 @@ hc_miner: CMakeFiles/hc_miner.dir/main.cpp.o
 hc_miner: CMakeFiles/hc_miner.dir/RestClient.cpp.o
 hc_miner: CMakeFiles/hc_miner.dir/build.make
 hc_miner: CMakeFiles/hc_miner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/subvertic/CLionProjects/hc-miner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hc_miner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hc_miner"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hc_miner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,6 +135,6 @@ CMakeFiles/hc_miner.dir/clean:
 .PHONY : CMakeFiles/hc_miner.dir/clean
 
 CMakeFiles/hc_miner.dir/depend:
-	cd /Users/subvertic/CLionProjects/hc-miner/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/subvertic/CLionProjects/hc-miner /Users/subvertic/CLionProjects/hc-miner /Users/subvertic/CLionProjects/hc-miner/cmake-build-debug /Users/subvertic/CLionProjects/hc-miner/cmake-build-debug /Users/subvertic/CLionProjects/hc-miner/cmake-build-debug/CMakeFiles/hc_miner.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pedro/CLionProjects/HcMiner/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pedro/CLionProjects/HcMiner /home/pedro/CLionProjects/HcMiner /home/pedro/CLionProjects/HcMiner/cmake-build-debug /home/pedro/CLionProjects/HcMiner/cmake-build-debug /home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/hc_miner.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hc_miner.dir/depend
 

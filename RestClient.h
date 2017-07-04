@@ -26,12 +26,11 @@ using namespace std;
  * Defines a structure that holds in memory all the parameters needed to
  * communicate with the Rest API of the application.
  */
-struct ApiData {
+struct ApiParams{
     static const std::string HOST;
     static const std::string TOKEN_ENDPOINT;
-    static const std::string PERFDATA_ENDPOINT;
-    static const std::string HEADER_CONTENT_TYPE;
-    static const std::string HEADER_ACCEPT;
+    static const std::string DEFAULT_CONTENT_TYPE;
+    static const std::string DEFAULT_ACCEPT;
     static const std::string CHARSET;
 };
 
@@ -47,7 +46,7 @@ class RestClient {
 
 public:
     // CONSTRUCTOR / DESTRUCTOR -----------------------------------------
-    RestClient(std::string, std::string);
+    RestClient(std::string, std::string, std::string);
     ~RestClient();
 
     // CLASS PUBLIC METHODS ---------------------------------------------
@@ -64,6 +63,7 @@ private:
     std::string _userId;
     std::string _userKey;
     std::string _jwtToken;
+    std::string _server;
 
     // PRIVATE METHODS --------------------------------------------------
     std::string buildAuthenticationPayload();

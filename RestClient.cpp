@@ -4,12 +4,11 @@
 
 #include "RestClient.h"
 
-const std::string ApiData::HOST = "http://localhost:8080";
-const std::string ApiData::TOKEN_ENDPOINT = "/api/v1/auth";
-const std::string ApiData::PERFDATA_ENDPOINT = "/api/v1/perfdata";
-const std::string ApiData::HEADER_CONTENT_TYPE = "application/json";
-const std::string ApiData::HEADER_ACCEPT = "application/json";
-const std::string ApiData::CHARSET = "utf-8";
+const std::string ApiParams::HOST = "http://localhost:8080";
+const std::string ApiParams::TOKEN_ENDPOINT = "/api/v1/auth";
+const std::string ApiParams::DEFAULT_CONTENT_TYPE = "application/json";
+const std::string ApiParams::DEFAULT_ACCEPT = "application/json";
+const std::string ApiParams::CHARSET = "utf-8";
 
 // ----------------------------------------------------------------------
 // CONSTRUCTOR
@@ -20,9 +19,10 @@ const std::string ApiData::CHARSET = "utf-8";
  * @param userId The user identifier to be user for authentication
  * @param userKey The user secret to be used for authentication
  */
-RestClient::RestClient(std::string userId, std::string userKey) {
+RestClient::RestClient(std::string userId, std::string userKey, std::string server) {
     this->_userId = userId;
     this->_userKey = userKey;
+    this->_server = server;
 } // CONSTRUCTOR METHOD ENDS --------------------------------------------
 
 // ----------------------------------------------------------------------
@@ -49,9 +49,7 @@ std::string RestClient::buildAuthenticationPayload() {
 } // METHOD BUILD AUTHENTICATION PAYLOAD ENDS ---------------------------
 
 /**
- * https://stackoverflow.com/questions/8251325/how-do-i-post-a-buffer-of-json-using-libcurl
- * https://stackoverflow.com/questions/23052900/json-request-using-curl-in-c
- * https://cmake.org/cmake-tutorial/
+ *
  * @return
  */
 int RestClient::fetchJwtToken() {
@@ -61,7 +59,7 @@ int RestClient::fetchJwtToken() {
     if(!this->_userId.empty() && !this->_jwtToken.empty()){
         httpClient = curl_easy_init();
         std::string data = this->buildAuthenticationPayload();
-        std::string uri = ApiData::HOST+ApiData::TOKEN_ENDPOINT;
+        std::string uri = this->_server+ApiParams::TOKEN_ENDPOINT;
         if(httpClient){
             headers = NULL;
             headers = curl_slist_append(headers, "Content-Type: application/json");
@@ -112,8 +110,8 @@ int RestClient::post(std::string endpoint, std::string payload, std::string cont
             // CLEANUP ---------------------
             curl_easy_cleanup(httpClient);
             httpClient = NULL;
-            data.clear();
-            uri.clear();
+            payload.clear();
+            endpoint.clear();
         } // IF ENDS
     } // IF ENDS
     return SUCCESS;
