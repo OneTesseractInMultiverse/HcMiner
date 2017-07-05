@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/hc_miner.dir/main.cpp.o"
   "CMakeFiles/hc_miner.dir/RestClient.cpp.o"
   "CMakeFiles/hc_miner.dir/MiningContext.cpp.o"
+  "CMakeFiles/hc_miner.dir/CpuMiner.cpp.o"
   "hc_miner.pdb"
   "hc_miner"
 )

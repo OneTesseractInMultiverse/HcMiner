@@ -87,6 +87,12 @@
 		<Unit filename="/home/pedro/CLionProjects/HcMiner/AbstractMiner.h">
 			<Option target="hc_miner"/>
 		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/HcMiner/CpuMiner.cpp">
+			<Option target="hc_miner"/>
+		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/HcMiner/CpuMiner.h">
+			<Option target="hc_miner"/>
+		</Unit>
 		<Unit filename="/home/pedro/CLionProjects/HcMiner/MiningContext.cpp">
 			<Option target="hc_miner"/>
 		</Unit>

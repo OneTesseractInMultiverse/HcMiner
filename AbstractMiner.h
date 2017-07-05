@@ -5,18 +5,24 @@
 #ifndef HC_MINER_ABSTRACTMINER_H
 #define HC_MINER_ABSTRACTMINER_H
 /*
- * ---------------------------------------------------------------------------
+ * -----------------------------------------------------------------------
  * INCLUDE HEADERS
- * ---------------------------------------------------------------------------
+ * -----------------------------------------------------------------------
  */
 #include <thread>
+#include <string>
 #include "MiningContext.h"
 
+// =======================================================================
+// CLASS ABSTRACT MINER
+// =======================================================================
 /**
- *
+ * Defines a base class that must be implemented by any performance data mining
+ * agent. Extending this class provides the ability
  */
 class AbstractMiner{
 public:
+
     // -------------------------------------------------------------------
     // METHOD SET CONTEXT
     // -------------------------------------------------------------------
@@ -48,7 +54,7 @@ public:
     std::thread spawn(){
         return std::thread(&AbstractMiner::run, this);
     } // METHOD SPAWN ENDS -----------------------------------------------
-private:
+protected:
     MiningContext* _context;
 }; // CLASS ABSTRACT MINER ENDS ------------------------------------------
 

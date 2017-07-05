@@ -4,8 +4,6 @@
 
 #ifndef HC_MINER_MININGCONTEXT_H
 #define HC_MINER_MININGCONTEXT_H
-
-
 class MiningContext {
 public:
     bool isRunning();
@@ -16,6 +14,4 @@ private:
     bool _isRunning;
 
 };
-
-
 #endif //HC_MINER_MININGCONTEXT_H

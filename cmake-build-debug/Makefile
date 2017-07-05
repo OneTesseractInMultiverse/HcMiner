@@ -123,6 +123,33 @@ hc_miner/fast:
 	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/build
 .PHONY : hc_miner/fast
 
+CpuMiner.o: CpuMiner.cpp.o
+
+.PHONY : CpuMiner.o
+
+# target to build an object file
+CpuMiner.cpp.o:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/CpuMiner.cpp.o
+.PHONY : CpuMiner.cpp.o
+
+CpuMiner.i: CpuMiner.cpp.i
+
+.PHONY : CpuMiner.i
+
+# target to preprocess a source file
+CpuMiner.cpp.i:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/CpuMiner.cpp.i
+.PHONY : CpuMiner.cpp.i
+
+CpuMiner.s: CpuMiner.cpp.s
+
+.PHONY : CpuMiner.s
+
+# target to generate assembly for a file
+CpuMiner.cpp.s:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/CpuMiner.cpp.s
+.PHONY : CpuMiner.cpp.s
+
 MiningContext.o: MiningContext.cpp.o
 
 .PHONY : MiningContext.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... hc_miner"
+	@echo "... CpuMiner.o"
+	@echo "... CpuMiner.i"
+	@echo "... CpuMiner.s"
 	@echo "... MiningContext.o"
 	@echo "... MiningContext.i"
 	@echo "... MiningContext.s"
