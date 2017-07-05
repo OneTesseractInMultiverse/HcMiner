@@ -123,6 +123,33 @@ hc_miner/fast:
 	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/build
 .PHONY : hc_miner/fast
 
+MiningContext.o: MiningContext.cpp.o
+
+.PHONY : MiningContext.o
+
+# target to build an object file
+MiningContext.cpp.o:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/MiningContext.cpp.o
+.PHONY : MiningContext.cpp.o
+
+MiningContext.i: MiningContext.cpp.i
+
+.PHONY : MiningContext.i
+
+# target to preprocess a source file
+MiningContext.cpp.i:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/MiningContext.cpp.i
+.PHONY : MiningContext.cpp.i
+
+MiningContext.s: MiningContext.cpp.s
+
+.PHONY : MiningContext.s
+
+# target to generate assembly for a file
+MiningContext.cpp.s:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/MiningContext.cpp.s
+.PHONY : MiningContext.cpp.s
+
 RestClient.o: RestClient.cpp.o
 
 .PHONY : RestClient.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... hc_miner"
+	@echo "... MiningContext.o"
+	@echo "... MiningContext.i"
+	@echo "... MiningContext.s"
 	@echo "... RestClient.o"
 	@echo "... RestClient.i"
 	@echo "... RestClient.s"

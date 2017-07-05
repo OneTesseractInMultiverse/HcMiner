@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/pedro/CLionProjects/HcMiner/MiningContext.cpp
+MiningContext.h
+/home/pedro/CLionProjects/HcMiner/MiningContext.h
+
+/home/pedro/CLionProjects/HcMiner/MiningContext.h
+
 /home/pedro/CLionProjects/HcMiner/RestClient.cpp
 RestClient.h
 /home/pedro/CLionProjects/HcMiner/RestClient.h

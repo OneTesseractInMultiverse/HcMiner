@@ -1,1 +1,1 @@
-/usr/bin/c++    -std=c++11 -lcurl -g   CMakeFiles/hc_miner.dir/main.cpp.o CMakeFiles/hc_miner.dir/RestClient.cpp.o  -o hc_miner 
+/usr/bin/c++    -std=c++11 -lcurl -g   CMakeFiles/hc_miner.dir/main.cpp.o CMakeFiles/hc_miner.dir/RestClient.cpp.o CMakeFiles/hc_miner.dir/MiningContext.cpp.o  -o hc_miner 

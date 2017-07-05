@@ -84,6 +84,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/pedro/CLionProjects/HcMiner/AbstractMiner.h">
+			<Option target="hc_miner"/>
+		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/HcMiner/MiningContext.cpp">
+			<Option target="hc_miner"/>
+		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/HcMiner/MiningContext.h">
+			<Option target="hc_miner"/>
+		</Unit>
 		<Unit filename="/home/pedro/CLionProjects/HcMiner/RestClient.cpp">
 			<Option target="hc_miner"/>
 		</Unit>
