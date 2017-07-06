@@ -6,6 +6,14 @@ CMakeFiles/hc_miner.dir/CpuMiner.cpp.o: ../CpuMiner.cpp
 CMakeFiles/hc_miner.dir/CpuMiner.cpp.o: ../CpuMiner.h
 CMakeFiles/hc_miner.dir/CpuMiner.cpp.o: ../MiningContext.h
 CMakeFiles/hc_miner.dir/CpuMiner.cpp.o: ../RestClient.h
+CMakeFiles/hc_miner.dir/CpuMiner.cpp.o: ../XmlUtil.h
+
+CMakeFiles/hc_miner.dir/MemMiner.cpp.o: ../AbstractMiner.h
+CMakeFiles/hc_miner.dir/MemMiner.cpp.o: ../MemMiner.cpp
+CMakeFiles/hc_miner.dir/MemMiner.cpp.o: ../MemMiner.h
+CMakeFiles/hc_miner.dir/MemMiner.cpp.o: ../MiningContext.h
+CMakeFiles/hc_miner.dir/MemMiner.cpp.o: ../RestClient.h
+CMakeFiles/hc_miner.dir/MemMiner.cpp.o: ../XmlUtil.h
 
 CMakeFiles/hc_miner.dir/MiningContext.cpp.o: ../MiningContext.cpp
 CMakeFiles/hc_miner.dir/MiningContext.cpp.o: ../MiningContext.h
@@ -13,9 +21,14 @@ CMakeFiles/hc_miner.dir/MiningContext.cpp.o: ../MiningContext.h
 CMakeFiles/hc_miner.dir/RestClient.cpp.o: ../RestClient.cpp
 CMakeFiles/hc_miner.dir/RestClient.cpp.o: ../RestClient.h
 
+CMakeFiles/hc_miner.dir/XmlUtil.cpp.o: ../XmlUtil.cpp
+CMakeFiles/hc_miner.dir/XmlUtil.cpp.o: ../XmlUtil.h
+
 CMakeFiles/hc_miner.dir/main.cpp.o: ../AbstractMiner.h
 CMakeFiles/hc_miner.dir/main.cpp.o: ../CpuMiner.h
+CMakeFiles/hc_miner.dir/main.cpp.o: ../MemMiner.h
 CMakeFiles/hc_miner.dir/main.cpp.o: ../MiningContext.h
 CMakeFiles/hc_miner.dir/main.cpp.o: ../RestClient.h
+CMakeFiles/hc_miner.dir/main.cpp.o: ../XmlUtil.h
 CMakeFiles/hc_miner.dir/main.cpp.o: ../main.cpp
 

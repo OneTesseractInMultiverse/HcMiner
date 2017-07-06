@@ -1,12 +1,13 @@
 //
-// Created by pedro on 7/4/17.
+// Created by pedro on 7/5/17.
+//
 
-#include "CpuMiner.h"
+#include "MemMiner.h"
 
 // -----------------------------------------------------------------------
 // CONSTRUCTOR METHOD
 // -----------------------------------------------------------------------
-CpuMiner::CpuMiner(int delay, std::string serverName) {
+MemMiner::MemMiner(int delay, std::string serverName) {
     this->_delay = delay;
     this->_xml = new XmlUtil();
     this->_restClient = new RestClient(serverName);
@@ -20,7 +21,7 @@ CpuMiner::CpuMiner(int delay, std::string serverName) {
  * This is the destructor of the class. Releases all the resources used by
  * the class.
  */
-CpuMiner::~CpuMiner() {
+MemMiner::~MemMiner() {
     if(this->_restClient != NULL){
         delete this->_restClient;
     } // IF ENDS
@@ -29,30 +30,30 @@ CpuMiner::~CpuMiner() {
 } // DESTRUCTOR METHOD ENDS ----------------------------------------------
 
 // -----------------------------------------------------------------------
-// DESTRUCTOR FETCH CPU DATA
+// DESTRUCTOR FETCH MEM DATA
 // -----------------------------------------------------------------------
 /**
  * Makes system calls to get current CPU usage during several iterations to
  * capture a set of data that the miner will send to the orchestrator.
  * @return 0 if everything completed successfully
  */
-int CpuMiner::fetchCpuData() {
+int MemMiner::fetchMemData() {
     this->_captures->clear();
+    const double mb = 1024 * 1024;
     for(int i = 0; i < this->_delay*2; ++i){
         try{
-            double load[3]; // Allocate memory to store stats response from
-                            // system call.
-            if(getloadavg(load, 3) != -1){
-                double cpuLoad = (load[0]*100)/10; // Normalize metric to %
-                this->_captures->push_back(cpuLoad);
+            struct sysinfo si;
+            if(!sysinfo(&si)){
+                auto memUsage = 100.0 - (((si.freeram / mb) * 100) / (si.totalram / mb));
+                this->_captures->push_back(memUsage);
             } // IF ENDS
             else{
-                std::cerr << "Error getting CPU load percentage "<< std::endl;
+                std::cerr << "Error getting mem performance data" << std::endl;
             } // ELSE ENDS
             std::this_thread::sleep_for(std::chrono::milliseconds(500));
         } // TRY ENDS
         catch(std::exception &e){
-            std::cerr << "Error in CpuMiner thread: " << e.what() << std::endl;
+            std::cerr << "Error in MemMiner thread: " << e.what() << std::endl;
         } // CATCH ENDS
     } // FOR ENDS
     return 0;
@@ -66,13 +67,13 @@ int CpuMiner::fetchCpuData() {
  * method makes the Miner to get into a continuous loop that executes in
  * a given interval of time
  */
-void CpuMiner::run() {
+void MemMiner::run() {
     // Enter a loop while the context is running
     while(this->_context->isRunning()){
-        std::cout << "CPU_MINER: capture started..." << std::endl;
-        if(!this->fetchCpuData()){
-            std::cout << "CPU_MINER: capture completed..." << std::endl;
-            std::cout << this->_xml->createXml("cpu", this->_captures) << std::endl;
+        std::cout << "MEM_MINER: capture started..." << std::endl;
+        if(!this->fetchMemData()){
+            std::cout << "MEM_MINER: capture completed..." << std::endl;
+            std::cout << this->_xml->createXml("mem", this->_captures) << std::endl;
         } // IF ENDS
     } // WHILE ENDS
 } // METHOD RUN ENDS

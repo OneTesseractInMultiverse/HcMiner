@@ -29,8 +29,6 @@ string
 -
 vector
 -
-sstream
--
 stdio.h
 /home/pedro/CLionProjects/HcMiner/stdio.h
 RestClient.h
@@ -39,6 +37,42 @@ MiningContext.h
 /home/pedro/CLionProjects/HcMiner/MiningContext.h
 AbstractMiner.h
 /home/pedro/CLionProjects/HcMiner/AbstractMiner.h
+XmlUtil.h
+/home/pedro/CLionProjects/HcMiner/XmlUtil.h
+
+/home/pedro/CLionProjects/HcMiner/MemMiner.cpp
+MemMiner.h
+/home/pedro/CLionProjects/HcMiner/MemMiner.h
+
+/home/pedro/CLionProjects/HcMiner/MemMiner.h
+iostream
+-
+thread
+-
+chrono
+-
+string
+-
+vector
+-
+unistd.h
+-
+stdlib.h
+/home/pedro/CLionProjects/HcMiner/stdlib.h
+sys/types.h
+/home/pedro/CLionProjects/HcMiner/sys/types.h
+sys/sysinfo.h
+/home/pedro/CLionProjects/HcMiner/sys/sysinfo.h
+stdio.h
+/home/pedro/CLionProjects/HcMiner/stdio.h
+RestClient.h
+/home/pedro/CLionProjects/HcMiner/RestClient.h
+MiningContext.h
+/home/pedro/CLionProjects/HcMiner/MiningContext.h
+AbstractMiner.h
+/home/pedro/CLionProjects/HcMiner/AbstractMiner.h
+XmlUtil.h
+/home/pedro/CLionProjects/HcMiner/XmlUtil.h
 
 /home/pedro/CLionProjects/HcMiner/MiningContext.cpp
 MiningContext.h
@@ -58,6 +92,18 @@ curl/curl.h
 iostream
 -
 
+/home/pedro/CLionProjects/HcMiner/XmlUtil.cpp
+XmlUtil.h
+/home/pedro/CLionProjects/HcMiner/XmlUtil.h
+
+/home/pedro/CLionProjects/HcMiner/XmlUtil.h
+string
+-
+vector
+-
+sstream
+-
+
 /home/pedro/CLionProjects/HcMiner/main.cpp
 iostream
 -
@@ -65,4 +111,6 @@ thread
 -
 CpuMiner.h
 /home/pedro/CLionProjects/HcMiner/CpuMiner.h
+MemMiner.h
+/home/pedro/CLionProjects/HcMiner/MemMiner.h
 

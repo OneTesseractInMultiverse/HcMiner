@@ -5,8 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pedro/CLionProjects/HcMiner/CpuMiner.cpp" "/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/hc_miner.dir/CpuMiner.cpp.o"
+  "/home/pedro/CLionProjects/HcMiner/MemMiner.cpp" "/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/hc_miner.dir/MemMiner.cpp.o"
   "/home/pedro/CLionProjects/HcMiner/MiningContext.cpp" "/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/hc_miner.dir/MiningContext.cpp.o"
   "/home/pedro/CLionProjects/HcMiner/RestClient.cpp" "/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/hc_miner.dir/RestClient.cpp.o"
+  "/home/pedro/CLionProjects/HcMiner/XmlUtil.cpp" "/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/hc_miner.dir/XmlUtil.cpp.o"
   "/home/pedro/CLionProjects/HcMiner/main.cpp" "/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles/hc_miner.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

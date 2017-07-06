@@ -150,6 +150,33 @@ CpuMiner.cpp.s:
 	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/CpuMiner.cpp.s
 .PHONY : CpuMiner.cpp.s
 
+MemMiner.o: MemMiner.cpp.o
+
+.PHONY : MemMiner.o
+
+# target to build an object file
+MemMiner.cpp.o:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/MemMiner.cpp.o
+.PHONY : MemMiner.cpp.o
+
+MemMiner.i: MemMiner.cpp.i
+
+.PHONY : MemMiner.i
+
+# target to preprocess a source file
+MemMiner.cpp.i:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/MemMiner.cpp.i
+.PHONY : MemMiner.cpp.i
+
+MemMiner.s: MemMiner.cpp.s
+
+.PHONY : MemMiner.s
+
+# target to generate assembly for a file
+MemMiner.cpp.s:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/MemMiner.cpp.s
+.PHONY : MemMiner.cpp.s
+
 MiningContext.o: MiningContext.cpp.o
 
 .PHONY : MiningContext.o
@@ -204,6 +231,33 @@ RestClient.cpp.s:
 	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/RestClient.cpp.s
 .PHONY : RestClient.cpp.s
 
+XmlUtil.o: XmlUtil.cpp.o
+
+.PHONY : XmlUtil.o
+
+# target to build an object file
+XmlUtil.cpp.o:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/XmlUtil.cpp.o
+.PHONY : XmlUtil.cpp.o
+
+XmlUtil.i: XmlUtil.cpp.i
+
+.PHONY : XmlUtil.i
+
+# target to preprocess a source file
+XmlUtil.cpp.i:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/XmlUtil.cpp.i
+.PHONY : XmlUtil.cpp.i
+
+XmlUtil.s: XmlUtil.cpp.s
+
+.PHONY : XmlUtil.s
+
+# target to generate assembly for a file
+XmlUtil.cpp.s:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/XmlUtil.cpp.s
+.PHONY : XmlUtil.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -243,12 +297,18 @@ help:
 	@echo "... CpuMiner.o"
 	@echo "... CpuMiner.i"
 	@echo "... CpuMiner.s"
+	@echo "... MemMiner.o"
+	@echo "... MemMiner.i"
+	@echo "... MemMiner.s"
 	@echo "... MiningContext.o"
 	@echo "... MiningContext.i"
 	@echo "... MiningContext.s"
 	@echo "... RestClient.o"
 	@echo "... RestClient.i"
 	@echo "... RestClient.s"
+	@echo "... XmlUtil.o"
+	@echo "... XmlUtil.i"
+	@echo "... XmlUtil.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

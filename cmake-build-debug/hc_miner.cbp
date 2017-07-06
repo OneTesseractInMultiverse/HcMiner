@@ -93,6 +93,12 @@
 		<Unit filename="/home/pedro/CLionProjects/HcMiner/CpuMiner.h">
 			<Option target="hc_miner"/>
 		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/HcMiner/MemMiner.cpp">
+			<Option target="hc_miner"/>
+		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/HcMiner/MemMiner.h">
+			<Option target="hc_miner"/>
+		</Unit>
 		<Unit filename="/home/pedro/CLionProjects/HcMiner/MiningContext.cpp">
 			<Option target="hc_miner"/>
 		</Unit>
@@ -103,6 +109,12 @@
 			<Option target="hc_miner"/>
 		</Unit>
 		<Unit filename="/home/pedro/CLionProjects/HcMiner/RestClient.h">
+			<Option target="hc_miner"/>
+		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/HcMiner/XmlUtil.cpp">
+			<Option target="hc_miner"/>
+		</Unit>
+		<Unit filename="/home/pedro/CLionProjects/HcMiner/XmlUtil.h">
 			<Option target="hc_miner"/>
 		</Unit>
 		<Unit filename="/home/pedro/CLionProjects/HcMiner/main.cpp">

@@ -1,20 +1,25 @@
 //
-// Created by pedro on 7/4/17.
+// Created by pedro on 7/5/17.
 //
 
-#ifndef HC_MINER_CPUMINER_H
-#define HC_MINER_CPUMINER_H
+#ifndef HC_MINER_MEMMINER_H
+#define HC_MINER_MEMMINER_H
 
 /*
  * -----------------------------------------------------------------------
  * INCLUDE HEADERS
  * -----------------------------------------------------------------------
  */
+
 #include <iostream>
 #include <thread>
 #include <chrono>
 #include <string>
 #include <vector>
+#include <unistd.h>
+#include "stdlib.h"
+#include "sys/types.h"
+#include "sys/sysinfo.h"
 #include "stdio.h"
 #include "RestClient.h"
 #include "MiningContext.h"
@@ -22,24 +27,20 @@
 #include "XmlUtil.h"
 
 // =======================================================================
-// CLASS CPU MINER
+// CLASS MEM MINER
 // =======================================================================
-/**
- * This class represents a CPU performance data mining agent
- */
-class CpuMiner : public AbstractMiner{
+class MemMiner : public AbstractMiner {
 
 public:
-    CpuMiner(int, std::string);
-    ~CpuMiner();
+    MemMiner(int, std::string);
+    ~MemMiner();
     void run();
 private:
     int _delay;
     std::vector<double>* _captures;
     RestClient* _restClient;
     XmlUtil* _xml;
-    int fetchCpuData();
-};
+    int fetchMemData();
+}; // CLASS MEM MINER ENDS -----------------------------------------------
 
-
-#endif //HC_MINER_CPUMINER_H
+#endif //HC_MINER_MEMMINER_H
