@@ -62,11 +62,11 @@ int main() {
     context->stop();
 
     // Return memory allocations on heap segment to the OS.
-    delete context;
     delete cpuMiner;
     delete memMiner;
     delete netMiner;
     delete diskMiner;
+    delete context;
 
     // Program exits with success status code
     return 0;

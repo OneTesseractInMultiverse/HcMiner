@@ -55,12 +55,14 @@ int RestClient::post(std::string endpoint, std::string payload, std::string cont
 
         // SETUP HEADERS ----------------
         headers = NULL;
-        curl_slist_append(headers, accept.c_str());
-        curl_slist_append(headers, encoding.c_str());
+        headers = curl_slist_append(headers, accept.c_str());
+        headers = curl_slist_append(headers, encoding.c_str());
+        headers = curl_slist_append(headers, "Content-Type: application/xml");
 
         // POST DATA
         curl_easy_setopt(httpClient, CURLOPT_HTTPHEADER, headers);
         curl_easy_setopt(httpClient, CURLOPT_URL, uri.c_str());
+        curl_easy_setopt(httpClient, CURLOPT_USERAGENT,  "Linux HcMiner");
         curl_easy_setopt(httpClient, CURLOPT_POST, 1L);
         curl_easy_setopt(httpClient, CURLOPT_POSTFIELDS, payload.c_str());
         curl_easy_setopt(httpClient, CURLOPT_POSTFIELDSIZE, payload.length());
