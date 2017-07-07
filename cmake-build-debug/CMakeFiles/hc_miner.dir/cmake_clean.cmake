@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/hc_miner.dir/CpuMiner.cpp.o"
   "CMakeFiles/hc_miner.dir/MemMiner.cpp.o"
   "CMakeFiles/hc_miner.dir/XmlUtil.cpp.o"
+  "CMakeFiles/hc_miner.dir/NetMiner.cpp.o"
+  "CMakeFiles/hc_miner.dir/DiskMiner.cpp.o"
   "hc_miner.pdb"
   "hc_miner"
 )

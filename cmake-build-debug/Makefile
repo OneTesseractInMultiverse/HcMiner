@@ -150,6 +150,33 @@ CpuMiner.cpp.s:
 	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/CpuMiner.cpp.s
 .PHONY : CpuMiner.cpp.s
 
+DiskMiner.o: DiskMiner.cpp.o
+
+.PHONY : DiskMiner.o
+
+# target to build an object file
+DiskMiner.cpp.o:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/DiskMiner.cpp.o
+.PHONY : DiskMiner.cpp.o
+
+DiskMiner.i: DiskMiner.cpp.i
+
+.PHONY : DiskMiner.i
+
+# target to preprocess a source file
+DiskMiner.cpp.i:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/DiskMiner.cpp.i
+.PHONY : DiskMiner.cpp.i
+
+DiskMiner.s: DiskMiner.cpp.s
+
+.PHONY : DiskMiner.s
+
+# target to generate assembly for a file
+DiskMiner.cpp.s:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/DiskMiner.cpp.s
+.PHONY : DiskMiner.cpp.s
+
 MemMiner.o: MemMiner.cpp.o
 
 .PHONY : MemMiner.o
@@ -203,6 +230,33 @@ MiningContext.s: MiningContext.cpp.s
 MiningContext.cpp.s:
 	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/MiningContext.cpp.s
 .PHONY : MiningContext.cpp.s
+
+NetMiner.o: NetMiner.cpp.o
+
+.PHONY : NetMiner.o
+
+# target to build an object file
+NetMiner.cpp.o:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/NetMiner.cpp.o
+.PHONY : NetMiner.cpp.o
+
+NetMiner.i: NetMiner.cpp.i
+
+.PHONY : NetMiner.i
+
+# target to preprocess a source file
+NetMiner.cpp.i:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/NetMiner.cpp.i
+.PHONY : NetMiner.cpp.i
+
+NetMiner.s: NetMiner.cpp.s
+
+.PHONY : NetMiner.s
+
+# target to generate assembly for a file
+NetMiner.cpp.s:
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/NetMiner.cpp.s
+.PHONY : NetMiner.cpp.s
 
 RestClient.o: RestClient.cpp.o
 
@@ -297,12 +351,18 @@ help:
 	@echo "... CpuMiner.o"
 	@echo "... CpuMiner.i"
 	@echo "... CpuMiner.s"
+	@echo "... DiskMiner.o"
+	@echo "... DiskMiner.i"
+	@echo "... DiskMiner.s"
 	@echo "... MemMiner.o"
 	@echo "... MemMiner.i"
 	@echo "... MemMiner.s"
 	@echo "... MiningContext.o"
 	@echo "... MiningContext.i"
 	@echo "... MiningContext.s"
+	@echo "... NetMiner.o"
+	@echo "... NetMiner.i"
+	@echo "... NetMiner.s"
 	@echo "... RestClient.o"
 	@echo "... RestClient.i"
 	@echo "... RestClient.s"

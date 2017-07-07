@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -lcurl -pthread -g   CMakeFiles/hcminer.dir/main.cpp.o CMakeFiles/hcminer.dir/RestClient.cpp.o CMakeFiles/hcminer.dir/MiningContext.cpp.o CMakeFiles/hcminer.dir/CpuMiner.cpp.o CMakeFiles/hcminer.dir/MemMiner.cpp.o CMakeFiles/hcminer.dir/XmlUtil.cpp.o CMakeFiles/hcminer.dir/NetMiner.cpp.o  -o hcminer 

@@ -1,5 +1,5 @@
 //
-// Created by pedro on 7/5/17.
+// Created by Pedro Guzman on 7/5/17.
 //
 
 #include "MemMiner.h"

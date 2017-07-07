@@ -187,6 +187,12 @@ hc_miner_BINARY_DIR:STATIC=/home/pedro/CLionProjects/HcMiner/cmake-build-debug
 //Value Computed by CMake
 hc_miner_SOURCE_DIR:STATIC=/home/pedro/CLionProjects/HcMiner
 
+//Value Computed by CMake
+hcminer_BINARY_DIR:STATIC=/home/pedro/CLionProjects/HcMiner/cmake-build-debug
+
+//Value Computed by CMake
+hcminer_SOURCE_DIR:STATIC=/home/pedro/CLionProjects/HcMiner
+
 
 ########################
 # INTERNAL cache entries

@@ -8,6 +8,13 @@ CMakeFiles/hc_miner.dir/CpuMiner.cpp.o
  /home/pedro/CLionProjects/HcMiner/MiningContext.h
  /home/pedro/CLionProjects/HcMiner/RestClient.h
  /home/pedro/CLionProjects/HcMiner/XmlUtil.h
+CMakeFiles/hc_miner.dir/DiskMiner.cpp.o
+ /home/pedro/CLionProjects/HcMiner/AbstractMiner.h
+ /home/pedro/CLionProjects/HcMiner/DiskMiner.cpp
+ /home/pedro/CLionProjects/HcMiner/DiskMiner.h
+ /home/pedro/CLionProjects/HcMiner/MiningContext.h
+ /home/pedro/CLionProjects/HcMiner/RestClient.h
+ /home/pedro/CLionProjects/HcMiner/XmlUtil.h
 CMakeFiles/hc_miner.dir/MemMiner.cpp.o
  /home/pedro/CLionProjects/HcMiner/AbstractMiner.h
  /home/pedro/CLionProjects/HcMiner/MemMiner.cpp
@@ -18,6 +25,13 @@ CMakeFiles/hc_miner.dir/MemMiner.cpp.o
 CMakeFiles/hc_miner.dir/MiningContext.cpp.o
  /home/pedro/CLionProjects/HcMiner/MiningContext.cpp
  /home/pedro/CLionProjects/HcMiner/MiningContext.h
+CMakeFiles/hc_miner.dir/NetMiner.cpp.o
+ /home/pedro/CLionProjects/HcMiner/AbstractMiner.h
+ /home/pedro/CLionProjects/HcMiner/MiningContext.h
+ /home/pedro/CLionProjects/HcMiner/NetMiner.cpp
+ /home/pedro/CLionProjects/HcMiner/NetMiner.h
+ /home/pedro/CLionProjects/HcMiner/RestClient.h
+ /home/pedro/CLionProjects/HcMiner/XmlUtil.h
 CMakeFiles/hc_miner.dir/RestClient.cpp.o
  /home/pedro/CLionProjects/HcMiner/RestClient.cpp
  /home/pedro/CLionProjects/HcMiner/RestClient.h
@@ -27,8 +41,10 @@ CMakeFiles/hc_miner.dir/XmlUtil.cpp.o
 CMakeFiles/hc_miner.dir/main.cpp.o
  /home/pedro/CLionProjects/HcMiner/AbstractMiner.h
  /home/pedro/CLionProjects/HcMiner/CpuMiner.h
+ /home/pedro/CLionProjects/HcMiner/DiskMiner.h
  /home/pedro/CLionProjects/HcMiner/MemMiner.h
  /home/pedro/CLionProjects/HcMiner/MiningContext.h
+ /home/pedro/CLionProjects/HcMiner/NetMiner.h
  /home/pedro/CLionProjects/HcMiner/RestClient.h
  /home/pedro/CLionProjects/HcMiner/XmlUtil.h
  /home/pedro/CLionProjects/HcMiner/main.cpp

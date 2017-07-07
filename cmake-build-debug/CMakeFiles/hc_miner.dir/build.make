@@ -201,6 +201,54 @@ CMakeFiles/hc_miner.dir/XmlUtil.cpp.o.provides: CMakeFiles/hc_miner.dir/XmlUtil.
 CMakeFiles/hc_miner.dir/XmlUtil.cpp.o.provides.build: CMakeFiles/hc_miner.dir/XmlUtil.cpp.o
 
 
+CMakeFiles/hc_miner.dir/NetMiner.cpp.o: CMakeFiles/hc_miner.dir/flags.make
+CMakeFiles/hc_miner.dir/NetMiner.cpp.o: ../NetMiner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/hc_miner.dir/NetMiner.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hc_miner.dir/NetMiner.cpp.o -c /home/pedro/CLionProjects/HcMiner/NetMiner.cpp
+
+CMakeFiles/hc_miner.dir/NetMiner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hc_miner.dir/NetMiner.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedro/CLionProjects/HcMiner/NetMiner.cpp > CMakeFiles/hc_miner.dir/NetMiner.cpp.i
+
+CMakeFiles/hc_miner.dir/NetMiner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hc_miner.dir/NetMiner.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedro/CLionProjects/HcMiner/NetMiner.cpp -o CMakeFiles/hc_miner.dir/NetMiner.cpp.s
+
+CMakeFiles/hc_miner.dir/NetMiner.cpp.o.requires:
+
+.PHONY : CMakeFiles/hc_miner.dir/NetMiner.cpp.o.requires
+
+CMakeFiles/hc_miner.dir/NetMiner.cpp.o.provides: CMakeFiles/hc_miner.dir/NetMiner.cpp.o.requires
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/NetMiner.cpp.o.provides.build
+.PHONY : CMakeFiles/hc_miner.dir/NetMiner.cpp.o.provides
+
+CMakeFiles/hc_miner.dir/NetMiner.cpp.o.provides.build: CMakeFiles/hc_miner.dir/NetMiner.cpp.o
+
+
+CMakeFiles/hc_miner.dir/DiskMiner.cpp.o: CMakeFiles/hc_miner.dir/flags.make
+CMakeFiles/hc_miner.dir/DiskMiner.cpp.o: ../DiskMiner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/hc_miner.dir/DiskMiner.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hc_miner.dir/DiskMiner.cpp.o -c /home/pedro/CLionProjects/HcMiner/DiskMiner.cpp
+
+CMakeFiles/hc_miner.dir/DiskMiner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hc_miner.dir/DiskMiner.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedro/CLionProjects/HcMiner/DiskMiner.cpp > CMakeFiles/hc_miner.dir/DiskMiner.cpp.i
+
+CMakeFiles/hc_miner.dir/DiskMiner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hc_miner.dir/DiskMiner.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedro/CLionProjects/HcMiner/DiskMiner.cpp -o CMakeFiles/hc_miner.dir/DiskMiner.cpp.s
+
+CMakeFiles/hc_miner.dir/DiskMiner.cpp.o.requires:
+
+.PHONY : CMakeFiles/hc_miner.dir/DiskMiner.cpp.o.requires
+
+CMakeFiles/hc_miner.dir/DiskMiner.cpp.o.provides: CMakeFiles/hc_miner.dir/DiskMiner.cpp.o.requires
+	$(MAKE) -f CMakeFiles/hc_miner.dir/build.make CMakeFiles/hc_miner.dir/DiskMiner.cpp.o.provides.build
+.PHONY : CMakeFiles/hc_miner.dir/DiskMiner.cpp.o.provides
+
+CMakeFiles/hc_miner.dir/DiskMiner.cpp.o.provides.build: CMakeFiles/hc_miner.dir/DiskMiner.cpp.o
+
+
 # Object files for target hc_miner
 hc_miner_OBJECTS = \
 "CMakeFiles/hc_miner.dir/main.cpp.o" \
@@ -208,7 +256,9 @@ hc_miner_OBJECTS = \
 "CMakeFiles/hc_miner.dir/MiningContext.cpp.o" \
 "CMakeFiles/hc_miner.dir/CpuMiner.cpp.o" \
 "CMakeFiles/hc_miner.dir/MemMiner.cpp.o" \
-"CMakeFiles/hc_miner.dir/XmlUtil.cpp.o"
+"CMakeFiles/hc_miner.dir/XmlUtil.cpp.o" \
+"CMakeFiles/hc_miner.dir/NetMiner.cpp.o" \
+"CMakeFiles/hc_miner.dir/DiskMiner.cpp.o"
 
 # External object files for target hc_miner
 hc_miner_EXTERNAL_OBJECTS =
@@ -219,9 +269,11 @@ hc_miner: CMakeFiles/hc_miner.dir/MiningContext.cpp.o
 hc_miner: CMakeFiles/hc_miner.dir/CpuMiner.cpp.o
 hc_miner: CMakeFiles/hc_miner.dir/MemMiner.cpp.o
 hc_miner: CMakeFiles/hc_miner.dir/XmlUtil.cpp.o
+hc_miner: CMakeFiles/hc_miner.dir/NetMiner.cpp.o
+hc_miner: CMakeFiles/hc_miner.dir/DiskMiner.cpp.o
 hc_miner: CMakeFiles/hc_miner.dir/build.make
 hc_miner: CMakeFiles/hc_miner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable hc_miner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pedro/CLionProjects/HcMiner/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable hc_miner"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hc_miner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -235,6 +287,8 @@ CMakeFiles/hc_miner.dir/requires: CMakeFiles/hc_miner.dir/MiningContext.cpp.o.re
 CMakeFiles/hc_miner.dir/requires: CMakeFiles/hc_miner.dir/CpuMiner.cpp.o.requires
 CMakeFiles/hc_miner.dir/requires: CMakeFiles/hc_miner.dir/MemMiner.cpp.o.requires
 CMakeFiles/hc_miner.dir/requires: CMakeFiles/hc_miner.dir/XmlUtil.cpp.o.requires
+CMakeFiles/hc_miner.dir/requires: CMakeFiles/hc_miner.dir/NetMiner.cpp.o.requires
+CMakeFiles/hc_miner.dir/requires: CMakeFiles/hc_miner.dir/DiskMiner.cpp.o.requires
 
 .PHONY : CMakeFiles/hc_miner.dir/requires
 
