@@ -67,7 +67,7 @@ double NetMiner::getCurrentNetUsage() {
     fclose(fp);
     return usage;
 } // METHOD GET CURRENT NET USAGE ENDS -----------------------------------
-
+git
 // -----------------------------------------------------------------------
 // DESTRUCTOR FETCH MEM DATA
 // -----------------------------------------------------------------------
