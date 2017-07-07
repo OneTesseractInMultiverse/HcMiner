@@ -26,7 +26,7 @@ int main() {
     std::cout << "Running HcMiner..." << std::endl;
 
 
-    std::string apiServer = "http://api.miner.com";
+    std::string apiServer = "http://subvertic-py-pguzmanb498.c9users.io";
 
     // First we create the shared MiningContext
     MiningContext * context = new MiningContext();

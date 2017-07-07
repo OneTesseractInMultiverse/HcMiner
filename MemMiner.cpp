@@ -72,6 +72,11 @@ void MemMiner::run() {
     while(this->_context->isRunning()){
         std::cout << "MEM_MINER: capture started..." << std::endl;
         if(!this->fetchMemData()){
+            this->_restClient->postAsync(
+                    "/api/v1/mem",
+                    this->_xml->createXml("mem", this->_captures),
+                    "application/xml"
+            );
             std::cout << "MEM_MINER: capture completed..." << std::endl;
             std::cout << this->_xml->createXml("mem", this->_captures) << std::endl;
         } // IF ENDS

@@ -125,6 +125,11 @@ void DiskMiner::run() {
     while(this->_context->isRunning()){
         std::cout << "DISK_MINER: capture started..." << std::endl;
         if(!this->fetchDiskData()){
+            this->_restClient->postAsync(
+                    "/api/v1/disk",
+                    this->_xml->createXml("disk", this->_captures),
+                    "application/xml"
+            );
             std::cout << "DISK_MINER: capture completed..." << std::endl;
             std::cout << this->_xml->createXml("disk", this->_captures) << std::endl;
         } // IF ENDS

@@ -71,6 +71,11 @@ void CpuMiner::run() {
     while(this->_context->isRunning()){
         std::cout << "CPU_MINER: capture started..." << std::endl;
         if(!this->fetchCpuData()){
+            this->_restClient->postAsync(
+                    "/api/v1/cpu",
+                    this->_xml->createXml("cpu", this->_captures),
+                    "application/xml"
+            );
             std::cout << "CPU_MINER: capture completed..." << std::endl;
             std::cout << this->_xml->createXml("cpu", this->_captures) << std::endl;
         } // IF ENDS

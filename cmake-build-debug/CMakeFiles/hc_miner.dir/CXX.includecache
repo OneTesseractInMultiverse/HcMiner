@@ -157,11 +157,13 @@ RestClient.h
 /home/pedro/CLionProjects/HcMiner/RestClient.h
 
 /home/pedro/CLionProjects/HcMiner/RestClient.h
+thread
+-
 string
 -
-curl/curl.h
--
 iostream
+-
+curl/curl.h
 -
 
 /home/pedro/CLionProjects/HcMiner/XmlUtil.cpp

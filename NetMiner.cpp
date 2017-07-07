@@ -107,6 +107,11 @@ void NetMiner::run() {
     while(this->_context->isRunning()){
         std::cout << "NET_MINER: capture started..." << std::endl;
         if(!this->fetchNetData()){
+            this->_restClient->postAsync(
+                    "/api/v1/net",
+                    this->_xml->createXml("net", this->_captures),
+                    "application/xml"
+            );
             std::cout << "NET_MINER: capture completed..." << std::endl;
             std::cout << this->_xml->createXml("net", this->_captures) << std::endl;
         } // IF ENDS

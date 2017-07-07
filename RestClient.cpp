@@ -2,6 +2,7 @@
 // Created by Pedro Guzmán on 7/2/17.
 //
 
+
 #include "RestClient.h"
 
 // ----------------------------------------------------------------------
@@ -41,14 +42,25 @@ RestClient::~RestClient() {
 int RestClient::post(std::string endpoint, std::string payload, std::string contentType){
     CURL* httpClient = curl_easy_init();
     CURLcode ret;
+    int result = -1;
     struct curl_slist* headers;
     if(httpClient){
 
+        // SETUP HEADER PARAMS ----------
+        string accept = "Accept: " + contentType;
+        string encoding = "charset: utf-8";
+
+        // SETUP URI --------------------
+        string uri = this->_server + endpoint;
+
         // SETUP HEADERS ----------------
         headers = NULL;
-        headers = curl_slist_append(headers, contentType.c_str());
+        curl_slist_append(headers, accept.c_str());
+        curl_slist_append(headers, encoding.c_str());
 
-        curl_easy_setopt(httpClient, CURLOPT_URL, endpoint.c_str());
+        // POST DATA
+        curl_easy_setopt(httpClient, CURLOPT_HTTPHEADER, headers);
+        curl_easy_setopt(httpClient, CURLOPT_URL, uri.c_str());
         curl_easy_setopt(httpClient, CURLOPT_POST, 1L);
         curl_easy_setopt(httpClient, CURLOPT_POSTFIELDS, payload.c_str());
         curl_easy_setopt(httpClient, CURLOPT_POSTFIELDSIZE, payload.length());
@@ -56,14 +68,41 @@ int RestClient::post(std::string endpoint, std::string payload, std::string cont
 
         // PERFORM POST OPERATION ------
         ret = curl_easy_perform(httpClient);
-        std::cout << ret << std::endl;
+        if(ret == CURLE_OK){
+            result = 0;
+        } // IF ENDS
+        else{
+            cerr << "CURL ERROR: " << curl_easy_strerror(ret) << endl;
+        } // ELSE ENDS
 
         // CLEANUP ---------------------
+        curl_slist_free_all(headers);
         curl_easy_cleanup(httpClient);
         httpClient = NULL;
         payload.clear();
         endpoint.clear();
     } // IF ENDS
-    return SUCCESS;
+    return result;
 } // METHOD POST JSON ENDS ----------------------------------------------
+
+// ----------------------------------------------------------------------
+// METHOD POST ASYNC
+// ----------------------------------------------------------------------
+/**
+ * Posts a given payload using a background detached thread so that
+ * @return 0 when data sent successfully.
+ */
+int RestClient::postAsync(std::string endpoint, std::string payload, std::string contentType) {
+    try{
+        thread worker(&RestClient::post, this, endpoint, payload, contentType);
+        // Make the thread detached from parent thread so it runs in the background
+        // without blocking current execution thread.
+        worker.detach();
+    } // TRY ENDS
+    catch(std::exception e){
+        cerr << "CURL ERROR: " << e.what() << endl;
+        return -1;
+    } // CATCH ENDS
+    return 0;
+} // METHOD POST ASYNC ENDS ---------------------------------------------
 
