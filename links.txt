@@ -1,4 +1,0 @@
-https://stackoverflow.com/questions/33856059/problems-with-lcurl-in-clion
-https://stackoverflow.com/questions/8251325/how-do-i-post-a-buffer-of-json-using-libcurl
-https://stackoverflow.com/questions/23052900/json-request-using-curl-in-c
-https://cmake.org/cmake-tutorial/
